@@ -1,0 +1,113 @@
+.skills-strip-section {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.skills-strip-title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #00ffc8aa;
+  text-shadow: 0 0 10px #00ffc8aa;
+  margin-bottom: 3rem;
+}
+
+/* Make horizontal scroll smooth and hide default scrollbar */
+.skills-strip {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #00bbff #1c1c1c;
+}
+
+/* For WebKit (Chrome, Edge, Safari) */
+.skills-strip::-webkit-scrollbar {
+  height: 8px;
+}
+
+.skills-strip::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 8px;
+}
+
+.skills-strip::-webkit-scrollbar-thumb {
+  background-color: #00ffc8;
+  border-radius: 8px;
+  border: 2px solid #1c1c1c;
+  transition: background-color 0.3s ease;
+}
+
+.skills-strip::-webkit-scrollbar-thumb:hover {
+  background-color: #00e6b2;
+}
+
+/* Optional: Add subtle background motion for cooler effect */
+.skills-strip-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: radial-gradient(circle at center, #00ffc81a, transparent 70%);
+  animation: float-bg 10s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes float-bg {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.skill-chip-group {
+  min-width: 300px;
+  flex: 0 0 auto;
+  background: #1c1c1c;
+  border-radius: 16px;
+  padding: 1.5rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.skill-chip-group:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 255, 200, 0.4);
+}
+
+.skill-chip-group h3 {
+  font-size: 1.2rem;
+  color: #00ffc8;
+  margin-bottom: 1rem;
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chip {
+  background: #00ffc820;
+  color: #00ffc8;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.skill-chip:hover {
+  background: #00ffc84f;
+}

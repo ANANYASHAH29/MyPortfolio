@@ -1,0 +1,90 @@
+.experience-section {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.experience-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  background: #00f2fe;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00f2fe;
+  z-index: 2;
+}
+
+.timeline-line {
+  width: 4px;
+  height: 80px;
+  background: linear-gradient(to bottom, #4facfe, #00f2fe);
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.timeline-content {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  width: 90%;
+  max-width: 800px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.timeline-content h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-duration {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-description {
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ddd;
+}
+
+/* Glass effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 242, 254, 0.3);
+}

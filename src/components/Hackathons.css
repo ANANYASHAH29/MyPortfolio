@@ -1,0 +1,60 @@
+.hackathons-section {
+  background-color: #0f0f0f;
+  padding: 60px 20px;
+  color: #e0e0e0;
+}
+
+.section-title {
+  font-size: 2.7rem;
+  color: #06fbc6e2;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-intro {
+  font-size: 1rem;
+  color: #b0b0b0;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.hackathon-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #00ffd5;
+}
+
+.hackathon-card {
+  position: relative;
+  padding-left: 25px;
+}
+
+.glow-circle {
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 15px;
+  height: 15px;
+  background: #00ffd5;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ffd5;
+}
+
+.hackathon-content {
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 12px 18px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hackathon-content:hover {
+  transform: translateX(5px);
+  background-color: #222;
+}
