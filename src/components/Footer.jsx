@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="contact-row">
           <span className="label">LinkedIn:</span>
           <a
-            href="https://www.linkedin.com/in/ananya-shah/"
+            href="https://www.linkedin.com/in/ananya-h-shah-20730823b/"
             target="_blank"
             rel="noopener noreferrer"
             className="value"
