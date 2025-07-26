@@ -59,7 +59,7 @@ const Hero = () => {
     <button className="glow-button">View Projects</button>
   </a>
 
-  <a href="/resume.pdf" download>
+  <a href="/resume (7).pdf" download>
     <button className="glow-button">Download Resume</button>
   </a>
 </div>
